@@ -19,4 +19,6 @@ As voltage and current monitoring is pretty much important, I'm planning to sell
 
 Note that if you change the size of your shunt resistor, you'll also need to re-calculate the power dissipation capabilities. In the current configuration, a 0.5W resistor is suitable for the 2A maximum (voltage drop across the shunt resistor is 0.2 volts, which in turn gives 0.4 watts).
 
+The schematic was done using Eagle 6.4.
+
 The firmware isn't completed and will be uploaded as soon as it's done.
