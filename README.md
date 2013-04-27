@@ -1,4 +1,4 @@
-CurrentMonitor is a dual-channel current and voltage monitor based on two INA138 current shunt monitoring ICs. It's based on an atmega168 and should run between 3.3 and 5V input (5V tested).
+CurrentMonitor is a dual-channel current and voltage monitor based on two INA138 current shunt monitoring ICs and an atmega168 and should run between 3.3 and 5V input (5V tested).
 
 In the given configuration, the maximum values are:
 
@@ -8,8 +8,12 @@ In the given configuration, the maximum values are:
 * Current Gain: 2 (1mA = 2mV)
 * Voltage Dividor: 5 (1M/200k)
 * Self Power Usage: 5mA
+* Voltage Resolution: 25mV
+* Current Resolution: 2mA
 
-By adjusting the resistors for the voltage divider and the gain resistor, you can adapt the circuit to your own needs. No communication or storage is present; you need to add your own I²C and serial communication busses to it.
+The circuit is using the AVR's built-in ADC converter, which has a resolution of 10 bits (1024 values). By adjusting the resistors for the voltage divider and the gain resistor, you can adapt the circuit to your own needs. e.g. if the maximum voltage you want to measure is 10V, you can simply adjust the voltage dividor to 2 and thus have a voltage resolution of about 10mV. The minimum gain for the current is 1; so the minimum resolution one could gain is about 1mA. You could experiment with smaller gain values; the INA138 datasheet doesn't tell what happens then.
+
+No communication or storage is present; you need to add your own I²C and serial communication busses to it.
 
 The schematic uses a mix of through-hole and SMD components, because I wasn't sure if my chosen resitor values would fit; if they wouldn't, I could simply replace them. Feel free to replace them all with SMD resistors. But at the end, it turned out that my calculations were correct; but I haven't gotten around to change all components to SMD.
 
