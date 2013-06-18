@@ -1,3 +1,6 @@
+WARNING: This project is in transition to become a full-fledged MPPT charge controller for solar projects.
+---------
+
 CurrentMonitor is a dual-channel current and voltage monitor based on two INA138 current shunt monitoring ICs and an atmega168 and should run between 3.3 and 5V input (5V tested).
 
 In the given configuration, the maximum values are:
