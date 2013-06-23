@@ -23404,7 +23404,7 @@ compensate for ADC referenace inaccuracies</text>
 <label x="124.46" y="231.14" size="1.27" layer="97" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GND" class="1">
+<net name="GND" class="0">
 <segment>
 <wire x1="111.76" y1="218.44" x2="111.76" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -23811,7 +23811,7 @@ compensate for ADC referenace inaccuracies</text>
 <label x="50.8" y="167.64" size="1.27" layer="97" xref="yes"/>
 </segment>
 </net>
-<net name="SCK" class="1">
+<net name="SCK" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="213.36" y1="246.38" x2="208.28" y2="246.38" width="0.1524" layer="91"/>
@@ -23823,7 +23823,7 @@ compensate for ADC referenace inaccuracies</text>
 <label x="177.8" y="190.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="MISO" class="1">
+<net name="MISO" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="213.36" y1="248.92" x2="208.28" y2="248.92" width="0.1524" layer="91"/>
