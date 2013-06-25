@@ -24007,26 +24007,26 @@ compensate for ADC referenace inaccuracies</text>
 </net>
 <net name="MPPT_PWM" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PB1(OC1A)"/>
-<wire x1="175.26" y1="200.66" x2="177.8" y2="200.66" width="0.1524" layer="91"/>
-<label x="177.8" y="200.66" size="1.27" layer="97" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="320.04" y1="205.74" x2="317.5" y2="205.74" width="0.1524" layer="91"/>
 <label x="317.5" y="205.74" size="1.27" layer="97" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="MPPT_ENABLE" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB2(SS/OC1B)"/>
 <wire x1="175.26" y1="198.12" x2="177.8" y2="198.12" width="0.1524" layer="91"/>
 <label x="177.8" y="198.12" size="1.27" layer="97" xref="yes"/>
 </segment>
+</net>
+<net name="MPPT_ENABLE" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="320.04" y1="200.66" x2="317.5" y2="200.66" width="0.1524" layer="91"/>
 <label x="317.5" y="200.66" size="1.27" layer="97" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PB1(OC1A)"/>
+<wire x1="175.26" y1="200.66" x2="177.8" y2="200.66" width="0.1524" layer="91"/>
+<label x="177.8" y="200.66" size="1.27" layer="97" xref="yes"/>
 </segment>
 </net>
 <net name="N$8" class="0">
